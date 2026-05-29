@@ -213,7 +213,6 @@ Default Live Photo contract:
 - make the JPG still frame work as a poster frame with the strongest readable moment
 - validate each pair with `PHLivePhoto.request` via the `livephoto` workflow before calling it ready
 - default final delivery is to import each validated pair into Mac Photos so each direction appears as one `实况` item there
-- do not send to iPhone by default; only share/AirDrop from Photos if the user explicitly asks for phone transfer
 
 Do not copy the `livephoto` implementation into this skill. Treat `livephoto` as the packaging/export layer and keep `zinxpho` focused on the visual directions.
 

@@ -212,7 +212,8 @@ Default Live Photo contract:
 - use the HTML's own animation as the motion source, not a separately invented video unless the HTML is static
 - make the JPG still frame work as a poster frame with the strongest readable moment
 - validate each pair with `PHLivePhoto.request` via the `livephoto` workflow before calling it ready
-- if sending to iPhone, import the pair into Mac Photos first and share the Photos asset; Finder AirDrop of raw files may arrive as two normal files
+- default final delivery is to import each validated pair into Mac Photos so each direction appears as one `实况` item there
+- do not send to iPhone by default; only share/AirDrop from Photos if the user explicitly asks for phone transfer
 
 Do not copy the `livephoto` implementation into this skill. Treat `livephoto` as the packaging/export layer and keep `zinxpho` focused on the visual directions.
 
@@ -227,7 +228,7 @@ Before handing off, verify:
 - the canvas contains no explanatory copy, design notes, or self-referential labels unless explicitly requested
 - if the user did not provide copy, the generated text reads like invented display language rather than a description of the image
 - if extraction was required, the subject is actually isolated rather than merely cropped, and the edges are clean enough for compositing
-- if Live Photos were requested, each direction has a validated `jpg`/`mov` pair and Photos can treat the pair as `实况`
+- if Live Photos were requested, each direction has a validated `jpg`/`mov` pair and has been imported into Mac Photos as `实况`
 
 If one direction is weaker, revise it before final delivery.
 

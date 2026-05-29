@@ -42,11 +42,11 @@ The subject's face, features, and clothing must remain recognizably authentic. D
 
 If the user provides a local image file, inspect it with `view_image` first so the image is available in context.
 
-If you need raster isolation, background removal, or photo transformation, use the installed `imagegen` skill. In current Codex, that means using the built-in `image_gen` tool through the `imagegen` workflow, not a nonexistent `generate_image` tool.
+If you need raster isolation, background removal, or photo transformation, use the best image generation/editing capability available in the current agent environment.
 
 When the workflow needs true subject isolation, read [references/extraction-prompts.md](./references/extraction-prompts.md) and use its prompt skeleton or retry prompt rather than improvising loosely.
 
-Do not pin the workflow to a specific image model version unless the user explicitly asks for one. By default, use the latest built-in image generation path exposed by the current Codex environment.
+Do not pin the workflow to a specific image model or provider unless the user explicitly asks for one. By default, use the strongest available image generation/editing route exposed by the current agent environment.
 
 When the design needs the person separated from the source photo, treat this as a **true foreground extraction** task, not a loose reframing task.
 
@@ -56,7 +56,7 @@ When prompting image generation or editing:
 - prefer extraction, cleanup, and compositing over redraw
 - ask for a transparent background first when the workflow needs a usable cutout
 - ask for a neutral solid background only when transparency is unavailable or clearly inferior
-- prefer the environment default/latest image model instead of hardcoding a dated model name
+- prefer the current agent's strongest available image generation/editing route instead of hardcoding a model or provider name
 
 Hard extraction rules:
 - do not accept a simple crop, zoom, or reframed portrait as a substitute for cutout
@@ -259,4 +259,4 @@ The final response should include:
 
 - If there is no usable image, ask for one.
 - If image generation tools are unavailable, say so plainly and stop rather than pretending the workflow completed.
-- Only specify an exact image model when the user asks for one, or when a regression requires a temporary pin for reliability.
+- Only specify an exact image model or provider when the user asks for one, or when a regression requires a temporary pin for reliability.

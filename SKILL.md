@@ -1,6 +1,6 @@
 ---
 name: zinxpho
-description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, strong motion, dense typography, and A/B HTML outputs.
+description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, strong motion, dense typography, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
 ---
 
 # Zinxpho
@@ -14,6 +14,7 @@ This skill is for:
 - isolating or cleaning the subject when needed
 - integrating the subject into visually intense HTML/CSS compositions
 - producing two clearly different design directions as separate files
+- optionally packaging dynamic HTML outputs as Apple Live Photo pairs for social sharing
 - shipping final-facing banners, posters, and hero compositions rather than annotated mockups
 
 Do not use this skill for:
@@ -27,6 +28,7 @@ This skill should trigger when:
 - the user explicitly says `zinxpho`
 - the user wants extreme editorial/graphic-design treatment around their real photo
 - the user wants multiple bold directions instead of one conservative layout
+- the user wants a shareable dynamic image, Live 图, 实况照片, or image post that can still show the HTML motion
 
 This skill requires an image when the user's authentic likeness is central to the request. If no usable image is available, stop and ask for one.
 
@@ -199,6 +201,21 @@ Output contract:
 
 If the user did not specify a destination, create a small task-local output folder and place both directions there.
 
+### Step 5.5: Package Live Photos when sharing matters
+
+If the user asks for `Live 图`, `实况照片`, an image upload that still moves, Douyin/Xiaohongshu dynamic image sharing, or says the output needs to be easier to share, use the installed `livephoto` skill after the HTML directions are complete.
+
+Default Live Photo contract:
+- export one Apple Live Photo pair per direction: `direction.jpg` and `direction.mov`
+- keep the original `direction.html` as the editable/source artifact
+- use vertical `1080x1920`, 3 seconds, 30 fps unless the user asks otherwise
+- use the HTML's own animation as the motion source, not a separately invented video unless the HTML is static
+- make the JPG still frame work as a poster frame with the strongest readable moment
+- validate each pair with `PHLivePhoto.request` via the `livephoto` workflow before calling it ready
+- if sending to iPhone, import the pair into Mac Photos first and share the Photos asset; Finder AirDrop of raw files may arrive as two normal files
+
+Do not copy the `livephoto` implementation into this skill. Treat `livephoto` as the packaging/export layer and keep `zinxpho` focused on the visual directions.
+
 ### Step 6: Validate before presenting
 
 Before handing off, verify:
@@ -210,6 +227,7 @@ Before handing off, verify:
 - the canvas contains no explanatory copy, design notes, or self-referential labels unless explicitly requested
 - if the user did not provide copy, the generated text reads like invented display language rather than a description of the image
 - if extraction was required, the subject is actually isolated rather than merely cropped, and the edges are clean enough for compositing
+- if Live Photos were requested, each direction has a validated `jpg`/`mov` pair and Photos can treat the pair as `实况`
 
 If one direction is weaker, revise it before final delivery.
 
@@ -235,6 +253,7 @@ The final response should include:
 - the saved paths of both directions
 - one short explanation of the art direction for each
 - one short note about how the photo was preserved and integrated
+- if Live Photos were requested, the saved `jpg`/`mov` paths, validation status, and whether the assets were imported into Mac Photos
 
 ## Failure handling
 

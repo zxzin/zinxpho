@@ -13,6 +13,7 @@ This skill is for:
 - preserving the user's authentic subject
 - isolating or cleaning the subject when needed
 - integrating the subject into visually intense HTML/CSS compositions
+- making the person or authentic subject the first visual read when the source image is person-led
 - producing two clearly different design directions as separate files
 - optionally packaging dynamic HTML outputs as Apple Live Photo pairs for social sharing
 - shipping final-facing banners, posters, and hero compositions rather than annotated mockups
@@ -71,6 +72,8 @@ If the original photo is already compositionally strong, do not force extraction
 ### Step 2: Solve integration, not just cutout
 
 After extraction, make the subject belong to the composition. Do not stop at dropping a raw cutout on top of a background.
+
+When the source image is person-led, the person must remain the dominant visual focus. Typography, overlays, background systems, glitches, masks, and motion should frame, amplify, or interact with the person rather than burying them.
 
 Use CSS and composition techniques such as:
 - aggressive color grading with `filter`
@@ -222,6 +225,7 @@ Before handing off, verify:
 - both directions exist as separate files
 - both files load with valid relative asset references
 - the authentic subject remains recognizable
+- when the source image is person-led, the person is the first visual read and is not overpowered by text, background graphics, effects, or motion
 - the two directions are materially different, not palette swaps
 - the stronger motion and density do not make the design unusable
 - the canvas contains no explanatory copy, design notes, or self-referential labels unless explicitly requested

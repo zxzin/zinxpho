@@ -237,7 +237,23 @@ Hard rules unless the user explicitly asks otherwise:
 
 ### Step 3.6: Generate real display copy, not image description
 
-When the user does not provide copy, read [references/copy-style-systems.md](./references/copy-style-systems.md) and use it to select the closest copy direction before designing.
+When copy will appear on the canvas, read [references/copy-style-systems.md](./references/copy-style-systems.md) if the user has not provided exact locked copy, if the task is promotional/explanatory, or if you need to decide how much creative control the agent has.
+
+Copy authority model:
+- **Locked copy**: if the user gives exact wording, treat it as source-of-truth. You may split lines, repeat fragments, adjust case, or place it typographically, but do not rewrite meaning, replace names, or invent a different slogan without approval.
+- **Guided copy**: if the user gives keywords, theme, tone, or product points, keep those constraints and generate a complete copy system around them.
+- **Agent-led copy**: if the user gives no copy, generate the first copy system from the image's implied aura, mythology, attitude, and use case.
+- **Promo/explain copy**: if the asset is promoting Zinxpho or explaining the effect, one variant may include clear value-prop text, but the display variant should still feel like a real poster, not a tutorial panel.
+
+For every direction, silently design a copy system before layout:
+- primary headline
+- secondary line
+- microtype fragments
+- ticker/rail fragments
+- badge/stamp text if useful
+- CTA only when the user or platform context needs one
+
+Then place only the parts that strengthen the design. Do not dump every line onto the canvas.
 
 If the user provides exact copy, treat it as source-of-truth and design around it.
 

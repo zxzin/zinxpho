@@ -4,6 +4,83 @@ Use this file only when the user did not provide exact copy and the design needs
 
 The goal is not to describe the image. The goal is to invent a small verbal world that makes the image feel like a campaign, poster, editorial spread, myth, or character launch.
 
+## Copy decision authority
+
+Before writing or placing copy, decide the user's authority level.
+
+### Level 1: Locked copy
+
+Use when the user provides exact wording, a slogan, a product name, a brand line, a title, a CTA, or text they clearly want used.
+
+User authority is highest. The agent may:
+- split lines
+- repeat fragments as ticker or microtype
+- change case when the alphabet supports it
+- adjust punctuation only when it is purely typographic
+- translate only when the user asks for translation
+
+The agent must not:
+- rewrite the main meaning
+- replace names, slogans, or product terms
+- invent a better headline instead of the user's wording
+- hide the user's required text in tiny type
+- turn exact copy into vague decorative fragments
+
+If exact copy is too long or visually weak, keep it but solve with hierarchy: dominant excerpt, secondary line, ticker fragments, or a companion short lockup. Mention the tradeoff in the final response if important.
+
+### Level 2: Guided copy
+
+Use when the user gives a theme, keywords, mood, selling points, audience, platform, product feature, or partial text, but not final wording.
+
+The user controls:
+- must-use words
+- language or bilingual direction
+- tone boundaries
+- claims that must be true
+- forbidden words or topics
+
+The agent controls:
+- headline invention
+- secondary line
+- microtype and ticker fragments
+- hierarchy and repetition
+- how much copy appears on each visual
+
+Keep must-use words visible enough to matter. Do not bury the user's key phrase in decorative microtype unless it is also present elsewhere.
+
+### Level 3: Agent-led copy
+
+Use when the user gives no copy and only provides an image or a visual direction.
+
+The agent should generate a complete copy system using the templates below. The generated copy should feel like a campaign, editorial title, character launch, mythic label, or visual identity system.
+
+The user still has final revision authority, but the first pass should not require the user to write the copy.
+
+### Level 4: Promo or explain copy
+
+Use when the output promotes Zinxpho itself, explains what the skill does, compares before/after behavior, or is part of a social launch set.
+
+In this mode, plan two copy roles:
+- explain variant: can contain value-prop copy, short feature claims, and "how it works" language
+- display variant: should use normal poster copy and show the effect without sounding like a tutorial
+
+Do not make both variants the same design with text turned on or off. The explain version can be more legible and instructional; the display version should be more desirable as a standalone post.
+
+## Minimum copy brief
+
+Do not ask the user a long intake form. If the work cannot proceed safely without copy context, ask only the missing critical item.
+
+Useful fields when available:
+- exact required text
+- language: Chinese, English, bilingual, or platform-specific
+- audience and platform
+- tone: luxury, mythic, funny, pop, technical, intimate, aggressive, soft
+- must-use or banned words
+- claims that need to be accurate
+- CTA, if any
+
+If the user does not provide these, infer them from the image and task.
+
 ## Selection rule
 
 1. Pick the closest style template below if one clearly matches the image's implied energy.
@@ -18,6 +95,9 @@ The goal is not to describe the image. The goal is to invent a small verbal worl
 - Headline copy should usually feel usable as a poster title, campaign lockup, album title, or character-branding device.
 - Secondary copy should support the world, not explain the image.
 - Microtype should feel like signal, tags, codes, fragments, or campaign debris.
+- Copy must fit the layout. If text is clipped, too small, too long, edge-cropped, or competing with the face, revise the copy or hierarchy rather than forcing it into the design.
+- Do not use false claims. For feature or product copy, keep claims short, true, and visually useful.
+- Avoid generic AI-marketing phrases such as "unlock creativity", "stunning visuals", or "next-level design" unless the user explicitly wants that tone.
 
 ## Fixed copy-system format
 
@@ -37,9 +117,51 @@ Ticker fragments:
 - <2 to 4 words>
 - <2 to 4 words>
 - <2 to 4 words>
+Copy authority: <locked/guided/agent-led/promo>
+Must-use text: <none or exact phrases>
+Do-not-use text: <none or exact phrases>
 ```
 
 Do not show this scaffold to the user unless they explicitly ask for the copy plan. Use it internally, then place only the strongest parts on the canvas.
+
+## Placement rules
+
+Assign each line a visual job:
+- headline: first read, large, short, memorable
+- secondary line: supports the world or value proposition
+- microtype: texture, codes, issue labels, metadata, seals, small fragments
+- ticker or rail: repeated rhythm, movement, border language
+- badge or stamp: compact status, edition, issue, number, claim, or CTA
+
+Keep copy away from eyes and mouth unless the style intentionally creates a face-safe overlap. On social posts, keep important copy away from extreme bottom and side edges.
+
+When bilingual copy is useful, do not translate every line. Use one language for the main emotional read and the other for microtype, subtitle, or ticker rhythm.
+
+## Promo copy for Zinxpho
+
+When promoting Zinxpho, avoid explaining too much inside the artwork. Prefer compact claims that map to visible output.
+
+Good claim directions:
+- real photo preserved
+- cutout-led design
+- motion poster
+- live photo ready
+- two visual directions
+- HTML as source
+- subject first
+
+Bad claim directions:
+- vague "AI makes it better"
+- long workflow explanations
+- model or provider names
+- promises about platforms that were not validated
+- paragraphs pasted into the poster
+
+For a launch set, use paired variants:
+- explain copy example: `先把人物立住，再让版式、切片和文字围绕她运动。`
+- display copy example: `日常封神`
+
+The exact words should change per image and style; the structure should remain.
 
 ## Template 1: Mythic Monument
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Zinxpho"
-  short_description: "Build kinetic pop photo-led web art directions"
-  default_prompt: "Use $zinxpho to turn my photo into two radically different kinetic pop HTML/CSS design directions with strong typography motion while preserving my authentic likeness."
+  short_description: "Build cutout-led multi-style photo art"
+  default_prompt: "Use $zinxpho to cut out the person in my photo and turn it into two radically different high-impact HTML/CSS design directions while preserving my authentic likeness."

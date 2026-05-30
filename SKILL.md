@@ -1,6 +1,6 @@
 ---
 name: zinxpho
-description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, strong kinetic motion, fast typography rings/tickers, flicker, pop-flat graphics, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
+description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, true person cutout/extraction, surprising multi-style visual design, strong motion, dense typography, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
 ---
 
 # Zinxpho
@@ -11,10 +11,10 @@ Use this skill when the user wants graphic-design-heavy, image-led output based 
 
 This skill is for:
 - preserving the user's authentic subject
-- isolating or cleaning the subject when needed
+- isolating or cleaning the person/subject as a foreground cutout when the image is person-led
 - integrating the subject into visually intense HTML/CSS compositions
 - making the person or authentic subject the first visual read when the source image is person-led
-- pushing strong kinetic typography, flashing accents, and pop-flat graphic systems when the user wants a more exciting result
+- producing surprising, high-impact visual directions across different aesthetics rather than locking into one house style
 - producing two clearly different design directions as separate files
 - optionally packaging dynamic HTML outputs as Apple Live Photo pairs for social sharing
 - shipping final-facing banners, posters, and hero compositions rather than annotated mockups
@@ -50,7 +50,7 @@ When the workflow needs true subject isolation, read [references/extraction-prom
 
 Do not pin the workflow to a specific image model or provider unless the user explicitly asks for one. By default, use the strongest available image generation/editing route exposed by the current agent environment.
 
-When the design needs the person separated from the source photo, treat this as a **true foreground extraction** task, not a loose reframing task.
+When the source image is person-led, default to making a **true foreground extraction** before design. Treat the person cutout as the hero layer, and treat the original photo/background as optional texture, context, or backup. Only skip extraction when the user explicitly asks to keep the whole photo intact, the person is not central, or extraction quality would clearly damage identity.
 
 When prompting image generation or editing:
 - explicitly preserve identity
@@ -62,13 +62,14 @@ When prompting image generation or editing:
 
 Hard extraction rules:
 - do not accept a simple crop, zoom, or reframed portrait as a substitute for cutout
+- do not treat a full rectangular photo frame as the main solution when the task is person-led and asks for a designed result
 - preserve the full usable silhouette whenever possible, including hair, shoulders, arms, hands, clothing outline, and leg shape if visible
 - keep edge fidelity high enough that the subject can be placed over a different background without an obvious box, matte, or leftover scene fragments
 - remove original background content behind the subject instead of merely blurring or darkening it when the design needs true isolation
 
 If a first extraction result behaves more like a crop than a cutout, iterate immediately with a stricter prompt focused on foreground separation, transparent background, and edge cleanup.
 
-If the original photo is already compositionally strong, do not force extraction. You may keep the image mostly intact and use it as the core layer of the design.
+If the original photo is already compositionally strong, you may keep it as a background, texture, reflection, or secondary layer, but still prefer a separate foreground subject layer for the main design read when the person is central.
 
 ### Step 2: Solve integration, not just cutout
 
@@ -83,7 +84,7 @@ Use CSS and composition techniques such as:
 - perspective, depth, and scale contrasts
 - intentional overlap between typography, shape systems, and the subject silhouette
 - fast orbiting text rings, ticker bands, repeated words, and rotating microtype around the subject
-- pop-flat shapes, comic panels, halftone dots, benday textures, starbursts, hard shadows, and high-contrast color blocking
+- style-specific graphic systems that wrap around the cutout, such as chrome/glass shards, botanical ornament, ukiyo-e waves, baroque curtains, zine scraps, pixel grids, neon signage, halftone dots, or editorial type architecture
 - controlled flicker, jump cuts, scanline flashes, and rhythmic layer swaps that add energy without hiding the face
 
 When using heavy 3D transforms, do not rely on blend modes alone to hide extraction edges.
@@ -96,9 +97,9 @@ Preferred traits:
 - `100vw` by `100vh` layout
 - bold typography crossing the canvas
 - multiple animated layers with obvious motion
-- fast kinetic text: orbiting rings, circular type, ticker strips, mirrored words, and repeated slogans
-- visible flicker or pulse accents, especially around text, borders, halftone fields, or pop shapes
-- strong pop-flat graphic language: saturated blocks, hard-edged shapes, halftone dots, sticker-like outlines, starbursts, and comic-print energy
+- fast kinetic text when it fits the direction: orbiting rings, circular type, ticker strips, mirrored words, repeated slogans, or snapping editorial type
+- visible flicker, pulse, parallax, shimmer, wipe, ripple, or layer-swap accents
+- a clear style world beyond "nice photo plus text"; every direction should have a distinct visual language
 - strong visual density without becoming unreadable
 - loop-safe motion if animation is present
 
@@ -107,13 +108,14 @@ Default motion bias:
 - use short 3-second loops with clear changes in position, scale, color, flicker, or layer ordering
 - make typography feel alive: words should slide, orbit, blink, repeat, or snap into new positions
 - keep flicker localized and purposeful; avoid full-screen white strobe or rapid flashing that makes the subject hard to view
-- if the first preview looks like a static poster with slight breathing, revise it toward stronger kinetic pop treatment
+- if the first preview looks like a static framed photo with slight breathing, revise it toward stronger cutout-led compositing and motion
 
 Prefer plain HTML/CSS/JS unless the current project already uses another frontend stack.
 
 Default creative bias:
 - prefer bold but usable over safe but flat
 - prefer a memorable silhouette and strong composition over generic balance
+- prefer one clear "wow" move per direction: impossible scale, surreal depth, unexpected typography behavior, dramatic ornament, graphic rupture, or a style collision that still preserves the person
 - do not average the design down just because a stranger option feels riskier
 
 ### Step 3.5: Treat the HTML as the final display artifact
@@ -192,10 +194,11 @@ Bad default copy behaves like:
 Generate two different outputs for every invocation. Do not return only one concept.
 
 The two outputs should diverge meaningfully, for example:
-- elegant vs chaotic
-- light vs dark
-- classical ornament vs futuristic glitch
-- restrained negative space vs saturated visual overload
+- editorial luxury vs chaotic zine
+- botanical ornament vs futuristic chrome
+- ukiyo-e rhythm vs neon street signage
+- baroque theatrical depth vs Swiss kinetic typography
+- restrained cinematic negative space vs saturated visual overload
 
 Do not overwrite `index.html`. Create new files named for the direction, for example:
 - `william_morris_zinxpho.html`
@@ -240,10 +243,11 @@ Before handing off, verify:
 - both files load with valid relative asset references
 - the authentic subject remains recognizable
 - when the source image is person-led, the person is the first visual read and is not overpowered by text, background graphics, effects, or motion
+- when the source image is person-led, the design uses a real foreground subject/cutout layer unless there is an explicit documented reason not to
 - the two directions are materially different, not palette swaps
 - the stronger motion and density do not make the design unusable
-- motion is visibly kinetic within the first second, with fast text movement, flicker/pulse accents, or pop-flat shape changes rather than only slow drifting
-- pop-flat graphics or high-contrast print/poster elements are present when the user asked for a cooler, more dynamic result
+- motion is visibly kinetic within the first second, with fast text movement, flicker/pulse accents, or style-specific layer changes rather than only slow drifting
+- the visual direction has a distinct style world and at least one surprising composition move, not only a framed photo with decorative text
 - the canvas contains no explanatory copy, design notes, or self-referential labels unless explicitly requested
 - if the user did not provide copy, the generated text reads like invented display language rather than a description of the image
 - if extraction was required, the subject is actually isolated rather than merely cropped, and the edges are clean enough for compositing

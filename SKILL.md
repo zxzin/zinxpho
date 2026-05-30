@@ -1,6 +1,6 @@
 ---
 name: zinxpho
-description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, true person cutout/extraction, sacred/epic subject portrayal, stable subject motion, reference-quality layered HTML/CSS motion, surprising multi-style visual worlds, dense environmental typography, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
+description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with model-agnostic subject preservation, true person cutout/extraction, portrait treatment, sacred/epic subject portrayal, stable subject motion, reference-quality layered HTML/CSS motion, surprising multi-style visual worlds, dense environmental typography, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
 ---
 
 # Zinxpho
@@ -35,6 +35,17 @@ This skill should trigger when:
 - the user wants a shareable dynamic image, Live 图, 实况照片, or image post that can still show the HTML motion
 
 This skill requires an image when the user's authentic likeness is central to the request. If no usable image is available, stop and ask for one.
+
+## Agent portability principles
+
+This skill is intended to work across different agents, runtimes, and image/model providers.
+
+Do not depend on one named image model, segmentation tool, browser automation system, or local folder. Use the best available capability in the current environment and keep the workflow portable:
+- if a true alpha cutout tool is available, use it and inspect the result
+- if only image editing is available, request a transparent-background subject extraction and preserve identity
+- if only CSS/HTML is available, use masking, cropping, duplicate layers, outlines, and backing plates to improve the portrait read
+- if a user provides reference HTML, inspect the code and rendered output, then generalize the motion grammar rather than copying local paths or exact assets
+- never write instructions that assume one vendor, one app, or one machine-specific tool unless the user explicitly asks for that environment
 
 ## Required workflow
 
@@ -71,6 +82,14 @@ Hard extraction rules:
 
 If a first extraction result behaves more like a crop than a cutout, iterate immediately with a stricter prompt focused on foreground separation, transparent background, and edge cleanup.
 
+After extraction, inspect the cutout as an artifact, not only inside the final poster. Check it on a hostile solid background or checkerboard if possible. Look for leftover chairs, tables, wall panels, matte boxes, halos, missing hair, or erased clothing edges.
+
+If the cutout still includes unwanted scene fragments but the face and body are usable, do not discard it automatically. Repair the presentation layer:
+- crop or mask away residual bottom or side fragments that are not part of the subject
+- add a clean outline, backing plate, shadow, aura, or silhouette echo to separate the person from the world
+- use the original photo as a deep background plate and the cutout as the hero layer
+- keep the face, hairline, shoulders, and clothing identity intact while hiding extraction defects in less important areas
+
 If the original photo is already compositionally strong, you may keep it as a background, texture, reflection, or secondary layer, but still prefer a separate foreground subject layer for the main design read when the person is central.
 
 ### Step 2: Solve integration, not just cutout
@@ -78,6 +97,15 @@ If the original photo is already compositionally strong, you may keep it as a ba
 After extraction, make the subject belong to the composition. Do not stop at dropping a raw cutout on top of a background.
 
 When the source image is person-led, the person must remain the dominant visual focus. Typography, overlays, background systems, glitches, masks, and motion should frame, amplify, or interact with the person rather than burying them.
+
+Portrait treatment is a separate design task. The output should not look like the original rectangular photo merely pasted into a graphic frame. Decide the subject strategy before styling:
+- full-body or upper-body monument, preserving the complete silhouette when it matters
+- close-up editorial icon, with the face enlarged and intentionally cropped like a cover image
+- partial cutout plus oversized face echo behind it
+- bust portrait on a plinth, arch, panel, or backing plate
+- side-weighted or off-center protagonist with the layout orbiting around that imbalance
+
+Use clean outlines, rim lights, graphic shadows, aura duplicates, backing panels, and crop masks to make the person read as a designed portrait layer.
 
 Use CSS and composition techniques such as:
 - aggressive color grading with `filter`
@@ -268,6 +296,12 @@ The two outputs should diverge meaningfully, for example:
 - baroque theatrical depth vs Swiss kinetic typography
 - restrained cinematic negative space vs saturated visual overload
 
+The two outputs must also diverge in portrait handling. Do not make two files with the same centered subject scale and posture plus different background colors. Vary at least two of:
+- subject scale: full figure, waist-up, bust, close-up, or deliberately cropped face
+- subject position: centered icon, side-weighted cover, low plinth, top-heavy masthead, or off-axis protagonist
+- subject integration: outlined sticker, sacred icon, magazine cover crop, framed relic, sliced echo, or shadow-backed cutout
+- foreground relationship: text behind the person, text crossing the lower body, vertical rail beside the face, architectural frame around the body, or ticker system outside the portrait zone
+
 Do not overwrite `index.html`. Create new files named for the direction, for example:
 - `william_morris_zinxpho.html`
 - `acid_glitch_zinxpho.html`
@@ -290,6 +324,7 @@ Before building a batch, create a private style allocation matrix. For every out
 
 Hard diversity rules:
 - do not repeat the same centered halo, same diagonal banner, same subject placement, or same lower caption structure across most outputs
+- do not repeat the same portrait treatment; close-up, full cutout, side crop, plinth, framed relic, and sliced echo are different solutions
 - do not let every image use the same "person in front of circular ring plus one text sash" formula
 - do not make style names do the work; the canvas must visibly prove the style difference
 - no single hero motif may dominate more than two outputs in the same batch unless the user explicitly requests a uniform campaign system
@@ -350,7 +385,9 @@ Before handing off, verify:
 - the authentic subject remains recognizable
 - when the source image is person-led, the person is the first visual read and is not overpowered by text, background graphics, effects, or motion
 - when the source image is person-led, the design uses a real foreground subject/cutout layer unless there is an explicit documented reason not to
+- when the source image is person-led, the portrait layer has been treated as design: clean edge strategy, deliberate crop, outline/backing/shadow/aura where needed, and no obvious leftover scene fragments
 - the two directions are materially different, not palette swaps
+- the two directions use visibly different portrait handling, not the same person placement with different decoration
 - the stronger motion and density do not make the design unusable
 - motion is visibly kinetic within the first second, with layered world movement, typography movement, flicker/pulse accents, or style-specific layer changes rather than only slow drifting
 - when the source image is person-led, the person feels sacred, epic, stable, and monumental rather than jittery, goofy, or randomly shaken

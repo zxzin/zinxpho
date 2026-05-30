@@ -1,4 +1,4 @@
 interface:
   display_name: "Zinxpho"
   short_description: "Build cinematic photo motion art"
-  default_prompt: "Use $zinxpho to cut out the person in my photo and turn it into radically different high-impact HTML/CSS motion posters with stable epic subject presence, reference-quality layered depth, distinct visual worlds, and no repeated template reskins."
+  default_prompt: "Use $zinxpho to cut out and treat the person in my photo as a designed portrait layer, then turn it into radically different high-impact HTML/CSS motion posters with stable epic subject presence, reference-quality layered depth, distinct portrait handling, distinct visual worlds, and no repeated template reskins."

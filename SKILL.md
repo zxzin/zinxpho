@@ -1,6 +1,6 @@
 ---
 name: zinxpho
-description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, strong motion, dense typography, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
+description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, strong kinetic motion, fast typography rings/tickers, flicker, pop-flat graphics, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
 ---
 
 # Zinxpho
@@ -14,6 +14,7 @@ This skill is for:
 - isolating or cleaning the subject when needed
 - integrating the subject into visually intense HTML/CSS compositions
 - making the person or authentic subject the first visual read when the source image is person-led
+- pushing strong kinetic typography, flashing accents, and pop-flat graphic systems when the user wants a more exciting result
 - producing two clearly different design directions as separate files
 - optionally packaging dynamic HTML outputs as Apple Live Photo pairs for social sharing
 - shipping final-facing banners, posters, and hero compositions rather than annotated mockups
@@ -81,6 +82,9 @@ Use CSS and composition techniques such as:
 - layered glow, haze, and shadow systems
 - perspective, depth, and scale contrasts
 - intentional overlap between typography, shape systems, and the subject silhouette
+- fast orbiting text rings, ticker bands, repeated words, and rotating microtype around the subject
+- pop-flat shapes, comic panels, halftone dots, benday textures, starbursts, hard shadows, and high-contrast color blocking
+- controlled flicker, jump cuts, scanline flashes, and rhythmic layer swaps that add energy without hiding the face
 
 When using heavy 3D transforms, do not rely on blend modes alone to hide extraction edges.
 
@@ -91,9 +95,19 @@ The design should occupy the full viewport with clear hierarchy and deliberate m
 Preferred traits:
 - `100vw` by `100vh` layout
 - bold typography crossing the canvas
-- multiple animated layers
+- multiple animated layers with obvious motion
+- fast kinetic text: orbiting rings, circular type, ticker strips, mirrored words, and repeated slogans
+- visible flicker or pulse accents, especially around text, borders, halftone fields, or pop shapes
+- strong pop-flat graphic language: saturated blocks, hard-edged shapes, halftone dots, sticker-like outlines, starbursts, and comic-print energy
 - strong visual density without becoming unreadable
 - loop-safe motion if animation is present
+
+Default motion bias:
+- motion should read within the first second, not only as a slow ambient drift
+- use short 3-second loops with clear changes in position, scale, color, flicker, or layer ordering
+- make typography feel alive: words should slide, orbit, blink, repeat, or snap into new positions
+- keep flicker localized and purposeful; avoid full-screen white strobe or rapid flashing that makes the subject hard to view
+- if the first preview looks like a static poster with slight breathing, revise it toward stronger kinetic pop treatment
 
 Prefer plain HTML/CSS/JS unless the current project already uses another frontend stack.
 
@@ -228,6 +242,8 @@ Before handing off, verify:
 - when the source image is person-led, the person is the first visual read and is not overpowered by text, background graphics, effects, or motion
 - the two directions are materially different, not palette swaps
 - the stronger motion and density do not make the design unusable
+- motion is visibly kinetic within the first second, with fast text movement, flicker/pulse accents, or pop-flat shape changes rather than only slow drifting
+- pop-flat graphics or high-contrast print/poster elements are present when the user asked for a cooler, more dynamic result
 - the canvas contains no explanatory copy, design notes, or self-referential labels unless explicitly requested
 - if the user did not provide copy, the generated text reads like invented display language rather than a description of the image
 - if extraction was required, the subject is actually isolated rather than merely cropped, and the edges are clean enough for compositing
@@ -240,6 +256,7 @@ Do not treat intensity, asymmetry, maximalism, aggression, or visual weirdness a
 ## Aesthetic guidance
 
 Do not collapse into one default style. Draw from a broad visual vocabulary when appropriate:
+- pop art, manga/comic print, benday dots, sticker poster graphics, zine collage, and saturated flat-color systems
 - Swiss graphic design
 - William Morris and decorative floral systems
 - Baroque theatrical depth

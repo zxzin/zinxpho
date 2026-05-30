@@ -84,7 +84,7 @@ Use CSS and composition techniques such as:
 - layered glow, haze, and shadow systems
 - perspective, depth, and scale contrasts
 - intentional overlap between typography, shape systems, and the subject silhouette
-- fast orbiting text rings, ticker bands, repeated words, and rotating microtype around the subject
+- ceremonial text rings, ticker bands, repeated words, and rotating microtype around the subject, paced slowly when they behave like halos or sacred frames
 - style-specific graphic systems that wrap around the cutout, such as chrome/glass shards, botanical ornament, ukiyo-e waves, baroque curtains, zine scraps, pixel grids, neon signage, halftone dots, or editorial type architecture
 - controlled flicker, jump cuts, scanline flashes, and rhythmic layer swaps that add energy without hiding the face
 
@@ -101,13 +101,15 @@ Hard motion rules for the subject layer:
 - do not rotate the whole body back and forth unless the user explicitly asks for a playful or chaotic effect
 - keep the face and body posture visually stable across the loop
 - if the subject layer moves, limit it to slow ceremonial parallax, tiny breathing scale, or a restrained camera push that does not change the person's dignity
-- put fast motion on the surrounding system instead: halos, rays, rings, typography, particles, curtains, waves, grid lines, scanlines, shadows, reflections, and background plates
+- put motion on the surrounding system instead: halos, rays, rings, typography, particles, curtains, waves, grid lines, scanlines, shadows, reflections, and background plates
+- keep halos, rays, glow blooms, light sweeps, and halo-like text rings slow and ceremonial; they should feel like ritual motion, not UI loading spinners or glitch effects
+- reserve faster motion only for small peripheral accents such as tiny scanlines, edge sparkles, small ticker details, or brief signal pulses, and never let those accents become the main read
 - duplicate/echo subject layers are allowed only as aura, shadow, reflection, or afterimage; they must not make the person look like they are glitching or being shaken
 
 Good motion reads as:
-- the world is moving around the person
+- the world is slowly moving around the person
 - light is gathering behind the person
-- text, ornament, and symbols orbit the person
+- text, ornament, and symbols orbit the person like a halo, procession, or ceremonial frame
 - the camera is reverently pushing toward the person
 
 Bad motion reads as:
@@ -115,6 +117,8 @@ Bad motion reads as:
 - the person is being dragged by the layout
 - the body is bouncing for no reason
 - the portrait feels goofy, nervous, or unstable
+- the light ring spins so fast that it reads as a gadget effect
+- halo-like text or ornaments whip around the person like a carnival sign
 
 ### Step 3: Use a full-canvas, high-motion composition
 
@@ -123,8 +127,8 @@ The design should occupy the full viewport with clear hierarchy and deliberate m
 Preferred traits:
 - `100vw` by `100vh` layout
 - bold typography crossing the canvas
-- multiple animated layers with obvious motion
-- fast kinetic text when it fits the direction: orbiting rings, circular type, ticker strips, mirrored words, repeated slogans, or snapping editorial type
+- multiple animated layers with deliberate motion
+- kinetic text when it fits the direction: orbiting rings, circular type, ticker strips, mirrored words, repeated slogans, or snapping editorial type
 - visible flicker, pulse, parallax, shimmer, wipe, ripple, or layer-swap accents
 - a clear style world beyond "nice photo plus text"; every direction should have a distinct visual language
 - strong visual density without becoming unreadable
@@ -133,8 +137,9 @@ Preferred traits:
 Default motion bias:
 - motion should read within the first second, not only as a slow ambient drift
 - use short 3-second loops with clear changes in position, scale, color, flicker, or layer ordering
-- make typography feel alive: words should slide, orbit, blink, repeat, or snap into new positions
+- make typography feel alive: words can slide, orbit, blink, repeat, or snap into new positions, but halo-like or crown-like text should move slowly
 - keep the person stable and let the surrounding world carry most of the kinetic energy
+- do not make sacred light systems too fast: halos, rays, glows, crowns, and halo-like text rings should usually use slow, legible, ceremonial timing
 - keep flicker localized and purposeful; avoid full-screen white strobe or rapid flashing that makes the subject hard to view
 - if the first preview looks like a static framed photo with slight breathing, revise it toward stronger cutout-led compositing and motion
 - if the first preview makes the person jitter, wobble, or rotate awkwardly, remove subject-layer motion and move the motion to halos, light, typography, or background systems

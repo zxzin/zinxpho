@@ -265,6 +265,43 @@ If intermediate assets are generated, keep filenames theme-specific and non-dest
 
 Prefer maximally contrasted directions over conservative variations. The second direction should feel like a real alternative worldview, not a mild restyling of the first.
 
+### Step 4.5: Enforce batch-level visual diversity
+
+When producing a batch, a social promo set, or more than two outputs from multiple photos, do not use one shared template with swapped colors, titles, and background textures. Batch outputs should feel like a curated set of different art directions, not a contact sheet of one system.
+
+Before building a batch, create a private style allocation matrix. For every output, assign a distinct:
+- composition skeleton
+- subject scale and crop strategy
+- typography architecture
+- motion grammar
+- depth/wraparound method
+- supporting graphic language
+
+Hard diversity rules:
+- do not repeat the same centered halo, same diagonal banner, same subject placement, or same lower caption structure across most outputs
+- do not let every image use the same "person in front of circular ring plus one text sash" formula
+- do not make style names do the work; the canvas must visibly prove the style difference
+- no single hero motif may dominate more than two outputs in the same batch unless the user explicitly requests a uniform campaign system
+- if an output uses a 3D text ribbon, vary its structure across the batch: circular crown, vertical orbit, shoulder sash, foreground scroll, architectural type frame, or segmented graphic band
+- vary motion by style: some designs can use ribbon orbit, others can use curtain reveal, wave procession, grid displacement, collage flips, chrome shard rotation, zine sticker jumps, or typographic camera moves
+- keep the subject monumental in every direction, but do not solve monumentality with the same circle-and-banner layout every time
+
+Good batch contrast looks like:
+- one image built as a magazine masthead cover with huge cropped type
+- one image built as a theatrical arch or stage with curtain motion
+- one image built as a Swiss grid system with strict alignment and sliding modules
+- one image built as an ukiyo-e wave composition where bands move like water
+- one image built as chrome/glass relic architecture with reflective shards
+- one image built as botanical manuscript ornament where leaves and text grow around the silhouette
+- one image built as risograph or zine collage with torn-paper layers and print offsets
+
+Batch QA:
+- make a contact sheet before final export
+- squint at the contact sheet: if the layouts read as the same poster with different skins, redesign at least half of them
+- check whether the person, main type, orbit/band system, and background use different spatial relationships in each output
+- verify that "explain" and "display" variants are not simply text-on/text-off versions of the same design unless the user asks for a matched pair
+- if the user's feedback says the set feels similar, treat that as a design failure and revise the skill or generation plan before producing more assets
+
 ### Step 5: Deliver workspace-ready files
 
 The final deliverable should be directly usable from the workspace.
@@ -306,6 +343,7 @@ Before handing off, verify:
 - motion is visibly kinetic within the first second, with fast text movement, flicker/pulse accents, or style-specific layer changes rather than only slow drifting
 - when the source image is person-led, the person feels sacred, epic, stable, and monumental rather than jittery, goofy, or randomly shaken
 - the visual direction has a distinct style world and at least one surprising composition move, not only a framed photo with decorative text
+- in a batch, the contact sheet passes the diversity test: different composition skeletons, not repeated reskins
 - the canvas contains no explanatory copy, design notes, or self-referential labels unless explicitly requested
 - if the user did not provide copy, the generated text reads like invented display language rather than a description of the image
 - if extraction was required, the subject is actually isolated rather than merely cropped, and the edges are clean enough for compositing

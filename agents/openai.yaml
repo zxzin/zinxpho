@@ -1,4 +1,4 @@
 interface:
   display_name: "Zinxpho"
-  short_description: "Build epic text-ribbon photo art"
-  default_prompt: "Use $zinxpho to cut out the person in my photo and turn it into two radically different high-impact HTML/CSS design directions with stable epic subject presence and 3D text-ribbon or graphic-ring orbit systems."
+  short_description: "Build diverse epic photo art"
+  default_prompt: "Use $zinxpho to cut out the person in my photo and turn it into radically different high-impact HTML/CSS design directions with stable epic subject presence, distinct visual grammars, and no repeated template reskins."

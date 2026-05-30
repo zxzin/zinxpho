@@ -1,6 +1,6 @@
 ---
 name: zinxpho
-description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, true person cutout/extraction, surprising multi-style visual design, strong motion, dense typography, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
+description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, true person cutout/extraction, sacred/epic subject portrayal, stable subject motion, surprising multi-style visual design, strong surrounding motion, dense typography, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
 ---
 
 # Zinxpho
@@ -14,6 +14,7 @@ This skill is for:
 - isolating or cleaning the person/subject as a foreground cutout when the image is person-led
 - integrating the subject into visually intense HTML/CSS compositions
 - making the person or authentic subject the first visual read when the source image is person-led
+- portraying the person with a sacred, epic, monumental presence across styles
 - producing surprising, high-impact visual directions across different aesthetics rather than locking into one house style
 - producing two clearly different design directions as separate files
 - optionally packaging dynamic HTML outputs as Apple Live Photo pairs for social sharing
@@ -89,6 +90,32 @@ Use CSS and composition techniques such as:
 
 When using heavy 3D transforms, do not rely on blend modes alone to hide extraction edges.
 
+### Step 2.5: Make the person monumental, not jittery
+
+When the source image is person-led, treat the person as a stable icon, monument, saint, heroine, sovereign figure, altar centerpiece, or mythic protagonist. This sacred/epic presence should hold across styles, even when the surrounding style is pop, zine, cyber, Swiss, ukiyo-e, baroque, floral, chrome, or risograph.
+
+The person should feel elevated rather than tossed around by the graphic system.
+
+Hard motion rules for the subject layer:
+- do not apply random body jitter, step-based slipping, wiggle, twitch, shake, or comedic wobble to the main person layer
+- do not rotate the whole body back and forth unless the user explicitly asks for a playful or chaotic effect
+- keep the face and body posture visually stable across the loop
+- if the subject layer moves, limit it to slow ceremonial parallax, tiny breathing scale, or a restrained camera push that does not change the person's dignity
+- put fast motion on the surrounding system instead: halos, rays, rings, typography, particles, curtains, waves, grid lines, scanlines, shadows, reflections, and background plates
+- duplicate/echo subject layers are allowed only as aura, shadow, reflection, or afterimage; they must not make the person look like they are glitching or being shaken
+
+Good motion reads as:
+- the world is moving around the person
+- light is gathering behind the person
+- text, ornament, and symbols orbit the person
+- the camera is reverently pushing toward the person
+
+Bad motion reads as:
+- the person is vibrating
+- the person is being dragged by the layout
+- the body is bouncing for no reason
+- the portrait feels goofy, nervous, or unstable
+
 ### Step 3: Use a full-canvas, high-motion composition
 
 The design should occupy the full viewport with clear hierarchy and deliberate motion. Avoid narrow boxed artboards unless the user explicitly wants one.
@@ -107,8 +134,10 @@ Default motion bias:
 - motion should read within the first second, not only as a slow ambient drift
 - use short 3-second loops with clear changes in position, scale, color, flicker, or layer ordering
 - make typography feel alive: words should slide, orbit, blink, repeat, or snap into new positions
+- keep the person stable and let the surrounding world carry most of the kinetic energy
 - keep flicker localized and purposeful; avoid full-screen white strobe or rapid flashing that makes the subject hard to view
 - if the first preview looks like a static framed photo with slight breathing, revise it toward stronger cutout-led compositing and motion
+- if the first preview makes the person jitter, wobble, or rotate awkwardly, remove subject-layer motion and move the motion to halos, light, typography, or background systems
 
 Prefer plain HTML/CSS/JS unless the current project already uses another frontend stack.
 
@@ -247,6 +276,7 @@ Before handing off, verify:
 - the two directions are materially different, not palette swaps
 - the stronger motion and density do not make the design unusable
 - motion is visibly kinetic within the first second, with fast text movement, flicker/pulse accents, or style-specific layer changes rather than only slow drifting
+- when the source image is person-led, the person feels sacred, epic, stable, and monumental rather than jittery, goofy, or randomly shaken
 - the visual direction has a distinct style world and at least one surprising composition move, not only a framed photo with decorative text
 - the canvas contains no explanatory copy, design notes, or self-referential labels unless explicitly requested
 - if the user did not provide copy, the generated text reads like invented display language rather than a description of the image

@@ -1,6 +1,6 @@
 ---
 name: zinxpho
-description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, true person cutout/extraction, sacred/epic subject portrayal, stable subject motion, 3D text-ribbon or graphic-ring orbit systems around the subject, surprising multi-style visual design, dense typography, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
+description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, true person cutout/extraction, sacred/epic subject portrayal, stable subject motion, reference-quality layered HTML/CSS motion, surprising multi-style visual worlds, dense environmental typography, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
 ---
 
 # Zinxpho
@@ -15,7 +15,7 @@ This skill is for:
 - integrating the subject into visually intense HTML/CSS compositions
 - making the person or authentic subject the first visual read when the source image is person-led
 - portraying the person with a sacred, epic, monumental presence across styles
-- building text-ribbon, banner, or graphic-ring systems that orbit the subject rather than sitting as flat labels below the image
+- building layered depth, typography, motion, and graphic systems around the subject instead of placing flat labels on top of a photo
 - producing surprising, high-impact visual directions across different aesthetics rather than locking into one house style
 - producing two clearly different design directions as separate files
 - optionally packaging dynamic HTML outputs as Apple Live Photo pairs for social sharing
@@ -84,14 +84,14 @@ Use CSS and composition techniques such as:
 - masking with `mask-image`, gradients, blur falloff, or soft edge treatments
 - perspective, depth, and scale contrasts
 - intentional overlap between typography, shape systems, and the subject silhouette
-- 3D text ribbons, banner bands, ticker strips, repeated words, and rotating microtype that orbit around the subject with visible front/back depth
+- 3D text ribbons, banner bands, ticker strips, repeated words, image slices, clipped photo echoes, and rotating microtype with visible front/back depth
 - graphic rings, arches, crowns, wave bands, grid bands, or ornament bands that wrap around the cutout instead of behaving like loose overlay effects
 - style-specific graphic systems that wrap around the cutout, such as chrome/glass shards, botanical ornament, ukiyo-e waves, baroque curtains, zine scraps, pixel grids, neon signage, halftone dots, or editorial type architecture
 - controlled flicker, jump cuts, scanline flashes, and rhythmic layer swaps that add energy without hiding the face
 
 When using heavy 3D transforms, do not rely on blend modes alone to hide extraction edges.
 
-If a composition needs grandeur, create it with scale, framing, orbiting text banners, graphic rings, arches, crowns, layered typography, and strong silhouette contrast. The epic read should come from composition and subject-centered systems, not from a loose overlay effect.
+If a composition needs grandeur, create it with scale, framing, depth separation, arches, crowns, layered typography, monumental negative space, and strong silhouette contrast. The epic read should come from the whole composition and subject-centered systems, not from a loose overlay effect.
 
 ### Step 2.5: Make the person monumental, not jittery
 
@@ -122,47 +122,58 @@ Bad motion reads as:
 - the portrait feels goofy, nervous, or unstable
 - halo-like text or ornaments whip around the person like a carnival sign
 
-### Step 2.6: Prefer 3D text-ribbon orbit systems
+### Step 2.6: Build a reference-quality depth stack
 
-When the design uses words around a person, do not leave the text only as a flat bottom ticker or small side tags. Build at least one integrated orbit system unless the user asks for a static poster:
-- turn text into a banner, sash, ribbon, tape strip, crown band, or ceremonial scroll
-- make the band pass around the subject, with one segment behind the person and another segment in front
-- use perspective, scale, blur, opacity, masks, or `clip-path` to separate near and far parts of the orbit
-- keep the orbit slow enough that the words remain readable and the motion feels ceremonial
-- let the copy become part of the portrait's myth: it should frame the person, not merely label the design
-- prefer a visible ribbon/banner surface behind the text, such as a sash, tape, scroll, or crown band; the words should travel on a designed band instead of appearing as loose symbols
+If the user points to a folder of strong HTML examples, inspect at least three matching files before designing. Treat their code and rendered screenshots as reference for motion grammar, not as templates to reskin.
 
-Good examples:
-- a circular type ribbon crossing behind the shoulders and in front of the lower body
-- a diagonal banner orbiting like a sash around the cutout
-- repeated title text on a 3D ring, crown, or elliptical band
-- graphic ornament rings paired with readable type fragments
+Proven Zinxpho-style HTML usually has a deliberate stack:
+- a stage or camera container using `perspective` and `transform-style: preserve-3d`
+- a deep photo bed from the original image, often blurred, color-graded, oversized, or clipped into echoes
+- a style-world layer: Swiss grid, image shards, cyber grid, ornamental arch, halftone field, theatrical panel, botanical frame, chrome shards, waves, or print texture
+- environmental typography: giant type tracks, vertical text, stamps, rails, mastheads, side labels, or ticker systems that belong to the world
+- a stable foreground subject cutout with strong edge treatment and shadow
+- foreground accents such as particles, scanlines, small tickers, petals, route rings, metadata stamps, or mask wipes
 
-Bad examples:
-- one flat ticker at the bottom doing all the work
-- tiny vertical tags that do not interact with the person
-- loose decorative effects used in place of actual type or shape integration
+Good motion is layered: slow camera or world drift, medium typography or module movement, and small fast peripheral accents. Bad motion is a flat photo with a label, one large band covering the face, repeated template reskins, or a pile of unrelated UI components.
 
-### Step 3: Use a full-canvas, high-motion composition
+### Step 2.7: Treat ribbons and orbits as one motif
 
-The design should occupy the full viewport with clear hierarchy and deliberate motion. Avoid narrow boxed artboards unless the user explicitly wants one.
+Text ribbons, orbit bands, and graphic rings are useful only when they serve the chosen visual world. Do not make every design a circular halo plus diagonal banner.
+
+When the design uses words around a person:
+- turn text into a physical banner, sash, tape strip, crown band, rail, ticker track, or ceremonial scroll
+- place it with real depth, using behind/in-front layering, masks, perspective, blur, or `clip-path`
+- keep face and expression clear; bands may cross shoulders, lower torso, edges, or negative space, but should not block the eyes or mouth
+- keep halo-like and ceremonial bands slow enough to read
+- use alternatives freely when they fit better: sliced photo panels, scrolling Swiss rows, theatrical arches, cyber grids, zine scraps, botanical ornament, chrome shards, waves, or editorial mastheads
+
+### Step 3: Use a full-display, high-motion composition
+
+The design should occupy the intended display surface with clear hierarchy and deliberate motion. Avoid narrow boxed artboards unless the user explicitly wants one.
+
+For vertical social posts, Live Photos, Douyin/Xiaohongshu assets, or any 9:16 deliverable, build the artwork inside a fixed vertical stage centered in the browser:
+- use a stage such as `width: min(100vw, 56.25vh); height: min(100vh, 177.7778vw); aspect-ratio: 9 / 16`
+- keep all poster elements inside that stage, using stage-relative units, percentages, or container units
+- let the outer body letterbox or center the stage; do not stretch the artwork to a landscape desktop browser viewport
+- render and inspect the stage at `1080x1920` before exporting Live Photo assets
 
 Preferred traits:
-- `100vw` by `100vh` layout
+- full-bleed stage layout for the target format
 - bold typography crossing the canvas
 - multiple animated layers with deliberate motion
 - kinetic text when it fits the direction: 3D text ribbons, orbiting rings, circular type, ticker strips, mirrored words, repeated slogans, or snapping editorial type
+- style-specific motion such as sliced image panels, drifting ornamental frames, grid crawl, ticker rails, collage float, print offset, or theatrical parallax
 - visible flicker, pulse, parallax, shimmer, wipe, ripple, or layer-swap accents
 - a clear style world beyond "nice photo plus text"; every direction should have a distinct visual language
 - strong visual density without becoming unreadable
 - loop-safe motion if animation is present
 
 Default motion bias:
-- motion should read within the first second, not only as a slow ambient drift
-- use short 3-second loops with clear changes in position, scale, color, flicker, or layer ordering
+- motion should read within the first second through layered world movement, not only a slow ambient drift
+- use short 3-second loops for Live Photo exports, with clear changes in position, scale, color, flicker, or layer ordering
 - make typography feel alive: words can slide, orbit, blink, repeat, or snap into new positions, but halo-like, crown-like, or ribbon-like text should move slowly
 - keep the person stable and let the surrounding world carry most of the kinetic energy
-- use slow, legible text-ribbon or graphic-ring timing as the main ceremonial motion
+- use slow, legible timing for ceremonial rings or ribbons when they appear; use other motion grammars when they fit the style better
 - keep flicker localized and purposeful; avoid full-screen white strobe or rapid flashing that makes the subject hard to view
 - if the first preview looks like a static framed photo with slight breathing, revise it toward stronger cutout-led compositing and motion
 - if the first preview makes the person jitter, wobble, or rotate awkwardly, remove subject-layer motion and move the motion to text ribbons, graphic rings, typography, or background systems
@@ -285,6 +296,7 @@ Hard diversity rules:
 - if an output uses a 3D text ribbon, vary its structure across the batch: circular crown, vertical orbit, shoulder sash, foreground scroll, architectural type frame, or segmented graphic band
 - vary motion by style: some designs can use ribbon orbit, others can use curtain reveal, wave procession, grid displacement, collage flips, chrome shard rotation, zine sticker jumps, or typographic camera moves
 - keep the subject monumental in every direction, but do not solve monumentality with the same circle-and-banner layout every time
+- do not reuse one background formula with different colors; each output needs its own depth stack and style-world layer
 
 Good batch contrast looks like:
 - one image built as a magazine masthead cover with huge cropped type
@@ -298,7 +310,7 @@ Good batch contrast looks like:
 Batch QA:
 - make a contact sheet before final export
 - squint at the contact sheet: if the layouts read as the same poster with different skins, redesign at least half of them
-- check whether the person, main type, orbit/band system, and background use different spatial relationships in each output
+- check whether the person, main type, primary graphic system, motion grammar, and background use different spatial relationships in each output
 - verify that "explain" and "display" variants are not simply text-on/text-off versions of the same design unless the user asks for a matched pair
 - if the user's feedback says the set feels similar, treat that as a design failure and revise the skill or generation plan before producing more assets
 
@@ -340,10 +352,11 @@ Before handing off, verify:
 - when the source image is person-led, the design uses a real foreground subject/cutout layer unless there is an explicit documented reason not to
 - the two directions are materially different, not palette swaps
 - the stronger motion and density do not make the design unusable
-- motion is visibly kinetic within the first second, with fast text movement, flicker/pulse accents, or style-specific layer changes rather than only slow drifting
+- motion is visibly kinetic within the first second, with layered world movement, typography movement, flicker/pulse accents, or style-specific layer changes rather than only slow drifting
 - when the source image is person-led, the person feels sacred, epic, stable, and monumental rather than jittery, goofy, or randomly shaken
 - the visual direction has a distinct style world and at least one surprising composition move, not only a framed photo with decorative text
 - in a batch, the contact sheet passes the diversity test: different composition skeletons, not repeated reskins
+- if vertical social output is intended, the HTML is actually framed as a 9:16 stage and does not stretch across a landscape browser viewport
 - the canvas contains no explanatory copy, design notes, or self-referential labels unless explicitly requested
 - if the user did not provide copy, the generated text reads like invented display language rather than a description of the image
 - if extraction was required, the subject is actually isolated rather than merely cropped, and the edges are clean enough for compositing
@@ -365,6 +378,8 @@ Do not collapse into one default style. Draw from a broad visual vocabulary when
 - futuristic glass, chrome, wireframe, and glitch systems
 
 Pick directions that fit the photo and maximize contrast between the two outputs.
+
+When strong local HTML references are available, mine their structural tricks: depth planes, photo-slice movement, oversized type tracks, foreground cutouts, ornamental frames, small metadata systems, and different animation tempos. Do not copy the same surface look unless the user explicitly asks for that style.
 
 When in doubt, increase directional contrast rather than smoothing both concepts toward the middle.
 

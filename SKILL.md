@@ -1,6 +1,6 @@
 ---
 name: zinxpho
-description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, true person cutout/extraction, sacred/epic subject portrayal, stable subject motion, surprising multi-style visual design, strong surrounding motion, dense typography, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
+description: Create two radically different high-energy web design directions from a user-provided photo. Use when the user invokes "zinxpho" or wants bold editorial art direction built around an authentic subject, with subject preservation, true person cutout/extraction, sacred/epic subject portrayal, stable subject motion, 3D text-ribbon or graphic-ring orbit systems around the subject, surprising multi-style visual design, dense typography, A/B HTML outputs, and optional Apple Live Photo / 实况图 packaging for easier Douyin/Xiaohongshu sharing.
 ---
 
 # Zinxpho
@@ -15,6 +15,7 @@ This skill is for:
 - integrating the subject into visually intense HTML/CSS compositions
 - making the person or authentic subject the first visual read when the source image is person-led
 - portraying the person with a sacred, epic, monumental presence across styles
+- building text-ribbon, banner, or graphic-ring systems that orbit the subject rather than sitting as flat labels below the image
 - producing surprising, high-impact visual directions across different aesthetics rather than locking into one house style
 - producing two clearly different design directions as separate files
 - optionally packaging dynamic HTML outputs as Apple Live Photo pairs for social sharing
@@ -81,14 +82,16 @@ When the source image is person-led, the person must remain the dominant visual 
 Use CSS and composition techniques such as:
 - aggressive color grading with `filter`
 - masking with `mask-image`, gradients, blur falloff, or soft edge treatments
-- layered glow, haze, and shadow systems
 - perspective, depth, and scale contrasts
 - intentional overlap between typography, shape systems, and the subject silhouette
-- ceremonial text rings, ticker bands, repeated words, and rotating microtype around the subject, paced slowly when they behave like halos or sacred frames
+- 3D text ribbons, banner bands, ticker strips, repeated words, and rotating microtype that orbit around the subject with visible front/back depth
+- graphic rings, arches, crowns, wave bands, grid bands, or ornament bands that wrap around the cutout instead of behaving like loose overlay effects
 - style-specific graphic systems that wrap around the cutout, such as chrome/glass shards, botanical ornament, ukiyo-e waves, baroque curtains, zine scraps, pixel grids, neon signage, halftone dots, or editorial type architecture
 - controlled flicker, jump cuts, scanline flashes, and rhythmic layer swaps that add energy without hiding the face
 
 When using heavy 3D transforms, do not rely on blend modes alone to hide extraction edges.
+
+If a composition needs grandeur, create it with scale, framing, orbiting text banners, graphic rings, arches, crowns, layered typography, and strong silhouette contrast. The epic read should come from composition and subject-centered systems, not from a loose overlay effect.
 
 ### Step 2.5: Make the person monumental, not jittery
 
@@ -101,15 +104,15 @@ Hard motion rules for the subject layer:
 - do not rotate the whole body back and forth unless the user explicitly asks for a playful or chaotic effect
 - keep the face and body posture visually stable across the loop
 - if the subject layer moves, limit it to slow ceremonial parallax, tiny breathing scale, or a restrained camera push that does not change the person's dignity
-- put motion on the surrounding system instead: halos, rays, rings, typography, particles, curtains, waves, grid lines, scanlines, shadows, reflections, and background plates
-- keep halos, rays, glow blooms, light sweeps, and halo-like text rings slow and ceremonial; they should feel like ritual motion, not UI loading spinners or glitch effects
+- put motion on the surrounding system instead: text ribbons, banner bands, graphic rings, typography, particles, curtains, waves, grid lines, scanlines, shadows, reflections, and background plates
+- keep text-ribbon crowns, graphic rings, and orbit bands slow and ceremonial; they should feel like ritual motion, not UI loading spinners or glitch effects
 - reserve faster motion only for small peripheral accents such as tiny scanlines, edge sparkles, small ticker details, or brief signal pulses, and never let those accents become the main read
 - duplicate/echo subject layers are allowed only as aura, shadow, reflection, or afterimage; they must not make the person look like they are glitching or being shaken
 
 Good motion reads as:
 - the world is slowly moving around the person
-- light is gathering behind the person
-- text, ornament, and symbols orbit the person like a halo, procession, or ceremonial frame
+- text banners, ornament, and symbols orbit the person like a halo, procession, or ceremonial frame
+- the orbit system passes partly behind and partly in front of the subject, creating a real wraparound read
 - the camera is reverently pushing toward the person
 
 Bad motion reads as:
@@ -117,8 +120,28 @@ Bad motion reads as:
 - the person is being dragged by the layout
 - the body is bouncing for no reason
 - the portrait feels goofy, nervous, or unstable
-- the light ring spins so fast that it reads as a gadget effect
 - halo-like text or ornaments whip around the person like a carnival sign
+
+### Step 2.6: Prefer 3D text-ribbon orbit systems
+
+When the design uses words around a person, do not leave the text only as a flat bottom ticker or small side tags. Build at least one integrated orbit system unless the user asks for a static poster:
+- turn text into a banner, sash, ribbon, tape strip, crown band, or ceremonial scroll
+- make the band pass around the subject, with one segment behind the person and another segment in front
+- use perspective, scale, blur, opacity, masks, or `clip-path` to separate near and far parts of the orbit
+- keep the orbit slow enough that the words remain readable and the motion feels ceremonial
+- let the copy become part of the portrait's myth: it should frame the person, not merely label the design
+- prefer a visible ribbon/banner surface behind the text, such as a sash, tape, scroll, or crown band; the words should travel on a designed band instead of appearing as loose symbols
+
+Good examples:
+- a circular type ribbon crossing behind the shoulders and in front of the lower body
+- a diagonal banner orbiting like a sash around the cutout
+- repeated title text on a 3D ring, crown, or elliptical band
+- graphic ornament rings paired with readable type fragments
+
+Bad examples:
+- one flat ticker at the bottom doing all the work
+- tiny vertical tags that do not interact with the person
+- loose decorative effects used in place of actual type or shape integration
 
 ### Step 3: Use a full-canvas, high-motion composition
 
@@ -128,7 +151,7 @@ Preferred traits:
 - `100vw` by `100vh` layout
 - bold typography crossing the canvas
 - multiple animated layers with deliberate motion
-- kinetic text when it fits the direction: orbiting rings, circular type, ticker strips, mirrored words, repeated slogans, or snapping editorial type
+- kinetic text when it fits the direction: 3D text ribbons, orbiting rings, circular type, ticker strips, mirrored words, repeated slogans, or snapping editorial type
 - visible flicker, pulse, parallax, shimmer, wipe, ripple, or layer-swap accents
 - a clear style world beyond "nice photo plus text"; every direction should have a distinct visual language
 - strong visual density without becoming unreadable
@@ -137,12 +160,12 @@ Preferred traits:
 Default motion bias:
 - motion should read within the first second, not only as a slow ambient drift
 - use short 3-second loops with clear changes in position, scale, color, flicker, or layer ordering
-- make typography feel alive: words can slide, orbit, blink, repeat, or snap into new positions, but halo-like or crown-like text should move slowly
+- make typography feel alive: words can slide, orbit, blink, repeat, or snap into new positions, but halo-like, crown-like, or ribbon-like text should move slowly
 - keep the person stable and let the surrounding world carry most of the kinetic energy
-- do not make sacred light systems too fast: halos, rays, glows, crowns, and halo-like text rings should usually use slow, legible, ceremonial timing
+- use slow, legible text-ribbon or graphic-ring timing as the main ceremonial motion
 - keep flicker localized and purposeful; avoid full-screen white strobe or rapid flashing that makes the subject hard to view
 - if the first preview looks like a static framed photo with slight breathing, revise it toward stronger cutout-led compositing and motion
-- if the first preview makes the person jitter, wobble, or rotate awkwardly, remove subject-layer motion and move the motion to halos, light, typography, or background systems
+- if the first preview makes the person jitter, wobble, or rotate awkwardly, remove subject-layer motion and move the motion to text ribbons, graphic rings, typography, or background systems
 
 Prefer plain HTML/CSS/JS unless the current project already uses another frontend stack.
 

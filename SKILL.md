@@ -107,6 +107,13 @@ Portrait treatment is a separate design task. The output should not look like th
 
 Use clean outlines, rim lights, graphic shadows, aura duplicates, backing panels, and crop masks to make the person read as a designed portrait layer.
 
+Portrait crop safety:
+- do not enlarge the subject just to create difference; over-zoomed faces, clipped foreheads, chopped shoulders, or a face pressed against the edge usually read as a mistake
+- keep the eyes, mouth, hair mass, and key clothing silhouette inside a comfortable safe area unless the crop is clearly editorial and intentional
+- if masking hides background leftovers, check that the resulting crop still feels like a designed portrait rather than a damaged extraction
+- side rails, vertical tickers, stamps, and badges must support the portrait; if they compete with the face, narrow them, reduce contrast, move them behind the subject, or remove them
+- keep headlines and badges away from the bottom and side edges so social UI, phone cropping, or browser letterboxing will not eat the copy
+
 Use CSS and composition techniques such as:
 - aggressive color grading with `filter`
 - masking with `mask-image`, gradients, blur falloff, or soft edge treatments
@@ -184,6 +191,8 @@ For vertical social posts, Live Photos, Douyin/Xiaohongshu assets, or any 9:16 d
 - keep all poster elements inside that stage, using stage-relative units, percentages, or container units
 - let the outer body letterbox or center the stage; do not stretch the artwork to a landscape desktop browser viewport
 - render and inspect the stage at `1080x1920` before exporting Live Photo assets
+- also inspect the actual HTML in the user's current or likely desktop browser viewport; a contact sheet can hide over-zoom, edge clipping, side-rail dominance, or text being cut off
+- when the real browser view and the contact sheet disagree, treat the browser view as authoritative and revise the HTML
 
 Preferred traits:
 - full-bleed stage layout for the target format
@@ -345,6 +354,7 @@ Good batch contrast looks like:
 Batch QA:
 - make a contact sheet before final export
 - squint at the contact sheet: if the layouts read as the same poster with different skins, redesign at least half of them
+- open at least one representative HTML file in a real browser or browser screenshot at the actual viewing aspect ratio; do not rely only on thumbnail contact sheets
 - check whether the person, main type, primary graphic system, motion grammar, and background use different spatial relationships in each output
 - verify that "explain" and "display" variants are not simply text-on/text-off versions of the same design unless the user asks for a matched pair
 - if the user's feedback says the set feels similar, treat that as a design failure and revise the skill or generation plan before producing more assets
@@ -386,6 +396,7 @@ Before handing off, verify:
 - when the source image is person-led, the person is the first visual read and is not overpowered by text, background graphics, effects, or motion
 - when the source image is person-led, the design uses a real foreground subject/cutout layer unless there is an explicit documented reason not to
 - when the source image is person-led, the portrait layer has been treated as design: clean edge strategy, deliberate crop, outline/backing/shadow/aura where needed, and no obvious leftover scene fragments
+- when using a close-up or side crop, the crop is flattering and intentional: no awkward face cutoff, no subject pushed hard into an edge, no background fragment used as fake silhouette, and no oversized side rail stealing attention
 - the two directions are materially different, not palette swaps
 - the two directions use visibly different portrait handling, not the same person placement with different decoration
 - the stronger motion and density do not make the design unusable
@@ -394,6 +405,7 @@ Before handing off, verify:
 - the visual direction has a distinct style world and at least one surprising composition move, not only a framed photo with decorative text
 - in a batch, the contact sheet passes the diversity test: different composition skeletons, not repeated reskins
 - if vertical social output is intended, the HTML is actually framed as a 9:16 stage and does not stretch across a landscape browser viewport
+- if the user is reviewing the file in a browser, open or screenshot that exact HTML and revise based on what is visible there
 - the canvas contains no explanatory copy, design notes, or self-referential labels unless explicitly requested
 - if the user did not provide copy, the generated text reads like invented display language rather than a description of the image
 - if extraction was required, the subject is actually isolated rather than merely cropped, and the edges are clean enough for compositing

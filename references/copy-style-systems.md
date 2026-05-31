@@ -138,6 +138,8 @@ For Chinese copy, prefer concise poster phrases over full explanatory sentences.
 
 Do not default to bordered boxes for captions, labels, or stamps. Integrate copy with typography: vertical rules, soft blur backing, baseline microtype, rail text, mask-revealed type, tone-on-tone placement, or type that belongs to the depth stack.
 
+Typeface choice must match the copy's world. Use serif/songti for classical, elegant, ceremonial, literary, museum, romantic, baroque, or heritage copy. Use sans for modern, Swiss, cyber, product, UI-like, street, sporty, or technical copy. Do not use one Chinese font stack for every direction.
+
 Keep copy away from eyes and mouth unless the style intentionally creates a face-safe overlap. On social posts, keep important copy away from extreme bottom and side edges.
 
 When bilingual copy is useful, do not translate every line. Use one language for the main emotional read and the other for microtype, subtitle, or ticker rhythm.

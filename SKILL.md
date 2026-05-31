@@ -246,6 +246,9 @@ Hard rules unless the user explicitly asks otherwise:
 - do not describe the art direction, editing choices, subject preservation, or design rationale inside the artwork
 - do not add side panels, info cards, captions, or labels such as `self portrait`, `raw frame`, `sunset edit`, or other meta-description text
 - only include on-canvas text that behaves like real display copy: the user's supplied line, a headline, a short slogan, a date/time stamp, or minimal decorative microtype
+- avoid default rectangular caption boxes, boxed stamps, and bordered label cards. These often read as low-end AI-poster UI. Use boxes only when the concept clearly calls for a ticket, label, plaque, museum tag, or printed-object system, and then integrate the box into the full visual language.
+- for Chinese display type, prefer high-quality CJK fonts such as `"Microsoft YaHei"`, `"PingFang SC"`, `"Noto Sans CJK SC"`, `"Source Han Sans SC"`, or a style-appropriate serif/songti stack. Do not let `Arial Black`, `Impact`, or generic Latin headline fonts drive Chinese typography.
+- prefer integrated typography treatments: large free-standing type, vertical rails, subtle rules, masking, shadow, blur backing, tone-on-tone placement, or type woven into the depth stack. Avoid thick cartoon outlines, hard red offset shadows, and boxed microcopy unless they are truly part of the chosen style.
 - if you are unsure whether a text block is ornamental or explanatory, remove it
 - keep design explanation in the final chat response, never inside the delivered HTML
 

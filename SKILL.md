@@ -249,6 +249,9 @@ Hard rules unless the user explicitly asks otherwise:
 - avoid default rectangular caption boxes, boxed stamps, and bordered label cards. These often read as low-end AI-poster UI. Use boxes only when the concept clearly calls for a ticket, label, plaque, museum tag, or printed-object system, and then integrate the box into the full visual language.
 - for Chinese display type, prefer high-quality CJK fonts such as `"Microsoft YaHei"`, `"PingFang SC"`, `"Noto Sans CJK SC"`, `"Source Han Sans SC"`, or a style-appropriate serif/songti stack. Do not let `Arial Black`, `Impact`, or generic Latin headline fonts drive Chinese typography.
 - prefer integrated typography treatments: large free-standing type, vertical rails, subtle rules, masking, shadow, blur backing, tone-on-tone placement, or type woven into the depth stack. Avoid thick cartoon outlines, hard red offset shadows, and boxed microcopy unless they are truly part of the chosen style.
+- keep Chinese display copy short and typographic. A short phrase with breathing room usually looks more premium than a long explanatory sentence squeezed into a caption strip.
+- replace generic boxed labels with designed type systems: a single vertical rule with text, text clipped into a halo path, small microtype sitting on a baseline, translucent backing blur, or tone-on-tone text over the photo memory layer.
+- if a text treatment looks like an AI-generated poster label, remove the box first, reduce the wording second, and only then consider changing color or effects.
 - if you are unsure whether a text block is ornamental or explanatory, remove it
 - keep design explanation in the final chat response, never inside the delivered HTML
 

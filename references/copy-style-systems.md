@@ -134,6 +134,10 @@ Assign each line a visual job:
 - ticker or rail: repeated rhythm, movement, border language
 - badge or stamp: compact status, edition, issue, number, claim, or CTA
 
+For Chinese copy, prefer concise poster phrases over full explanatory sentences. If the line needs to explain process, move that explanation to the final chat response and keep the canvas line short.
+
+Do not default to bordered boxes for captions, labels, or stamps. Integrate copy with typography: vertical rules, soft blur backing, baseline microtype, rail text, mask-revealed type, tone-on-tone placement, or type that belongs to the depth stack.
+
 Keep copy away from eyes and mouth unless the style intentionally creates a face-safe overlap. On social posts, keep important copy away from extreme bottom and side edges.
 
 When bilingual copy is useful, do not translate every line. Use one language for the main emotional read and the other for microtype, subtitle, or ticker rhythm.

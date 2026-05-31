@@ -164,6 +164,7 @@ If the user points to a folder of strong HTML examples, inspect at least three m
 Proven Zinxpho-style HTML usually has a deliberate stack:
 - a stage or camera container using `perspective` and `transform-style: preserve-3d`
 - a deep photo bed from the original image, often blurred, color-graded, oversized, or clipped into echoes
+- for person-led photos, keep the original photo present as a designed background memory layer by default. Enlarge, blur, color-grade, mask, crop, or darken it so it feels photographic without competing with the extracted subject. Only omit it when the source background is unusable, distracting, private, or the user explicitly wants a fully invented world.
 - a style-world layer: Swiss grid, image shards, cyber grid, ornamental arch, halftone field, theatrical panel, botanical frame, chrome shards, waves, or print texture
 - environmental typography: giant type tracks, vertical text, stamps, rails, mastheads, side labels, or ticker systems that belong to the world
 - a stable foreground subject cutout with strong edge treatment and shadow

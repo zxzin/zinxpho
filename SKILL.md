@@ -171,6 +171,17 @@ Proven Zinxpho-style HTML usually has a deliberate stack:
 
 Good motion is layered: slow camera or world drift, medium typography or module movement, and small fast peripheral accents. Bad motion is a flat photo with a label, one large band covering the face, repeated template reskins, or a pile of unrelated UI components.
 
+High-end photo-slice motion grammar:
+- Use the original photo as a deep environmental memory, then cut it into vertical or modular slices behind the extracted subject.
+- Put slices behind the hero cutout, not on top of the face. The cutout should stay stable and sacred while the photo world moves behind it.
+- Build each slice with `clip-path`, masked panels, or cropped duplicate image layers; avoid one flat translucent overlay.
+- Move adjacent slices in alternating directions or offsets, using decisive but smooth easing such as strong cubic-bezier timing. The motion should feel like sliding glass screens, editorial shutters, or gallery panels, not random jitter.
+- Give slices different treatment: one warm, one monochrome, one high-contrast, one low-opacity, one blurred or multiplied. This creates depth without adding unrelated decoration.
+- Keep a Swiss/editorial scaffold around the slices: fine grid lines, oversized stroked type tracks, small vertical stamps, and one hard foreground information rail if the direction is explanatory.
+- Use perspective and `translateZ` to separate planes: blurred photo bed deepest, slice panels mid-back, type tracks mid/front, subject cutout foreground, final copy rail above everything.
+- Let the rear slice movement be one of the main kinetic signatures when it works. Do not replace it with generic light sweeps, flat cards, one big banner, or decorative UI blocks.
+- The effect should still pass portrait safety: eyes, mouth, and face contour remain readable; moving slices create atmosphere and parallax, not identity confusion.
+
 ### Step 2.7: Treat ribbons and orbits as one motif
 
 Text ribbons, orbit bands, and graphic rings are useful only when they serve the chosen visual world. Do not make every design a circular halo plus diagonal banner.

@@ -171,16 +171,18 @@ Proven Zinxpho-style HTML usually has a deliberate stack:
 
 Good motion is layered: slow camera or world drift, medium typography or module movement, and small fast peripheral accents. Bad motion is a flat photo with a label, one large band covering the face, repeated template reskins, or a pile of unrelated UI components.
 
-High-end photo-slice motion grammar:
-- Use the original photo as a deep environmental memory, then cut it into vertical or modular slices behind the extracted subject.
-- Put slices behind the hero cutout, not on top of the face. The cutout should stay stable and sacred while the photo world moves behind it.
-- Build each slice with `clip-path`, masked panels, or cropped duplicate image layers; avoid one flat translucent overlay.
-- Move adjacent slices in alternating directions or offsets, using decisive but smooth easing such as strong cubic-bezier timing. The motion should feel like sliding glass screens, editorial shutters, or gallery panels, not random jitter.
-- Give slices different treatment: one warm, one monochrome, one high-contrast, one low-opacity, one blurred or multiplied. This creates depth without adding unrelated decoration.
-- Keep a Swiss/editorial scaffold around the slices: fine grid lines, oversized stroked type tracks, small vertical stamps, and one hard foreground information rail if the direction is explanatory.
-- Use perspective and `translateZ` to separate planes: blurred photo bed deepest, slice panels mid-back, type tracks mid/front, subject cutout foreground, final copy rail above everything.
-- Let the rear slice movement be one of the main kinetic signatures when it works. Do not replace it with generic light sweeps, flat cards, one big banner, or decorative UI blocks.
-- The effect should still pass portrait safety: eyes, mouth, and face contour remain readable; moving slices create atmosphere and parallax, not identity confusion.
+High-end motion grammar family:
+- The goal is the same mature feeling as strong reference HTML: a designed motion system with depth, restraint, and physical logic. Do not reduce it to one fixed effect.
+- Use one or two primary motion systems per direction, not many unrelated tricks. A premium direction feels authored because every moving layer belongs to the same visual world.
+- Keep the subject stable, sacred, and foregrounded. Put most movement into the environment: photo memories, modular screens, typography, ornaments, rails, curtains, grids, waves, shards, or frame systems.
+- Use perspective and `translateZ` to separate planes: deep background bed, mid-depth motion system, environmental type, hero subject cutout, and foreground copy or stamps.
+- Photo-slice/sliding-screen is one strong option: cut the original photo into vertical or modular panels behind the extracted subject, treat each panel slightly differently, and move adjacent panels in alternating offsets like sliding glass screens, editorial shutters, or gallery panels.
+- Equivalent premium options include architectural panels drifting behind the subject, theatrical curtains or arches opening slowly, chrome/glass shards rotating in depth, botanical ornaments processing around the silhouette, wave bands folding behind the body, zine scraps floating as a controlled collage, cyber grids crawling in perspective, or giant typographic rails passing behind and in front of the cutout.
+- Motion should feel physically motivated: panels slide, curtains breathe, rails scroll, scrolls orbit, grids crawl, waves fold, particles drift, type tracks move on a rail. Avoid random jitter, low-end scan lights, generic sparkle overlays, flat cards, and decoration that has no relationship to the world.
+- Use decisive but smooth easing for large layers, restrained ceremonial timing for halos/ribbons, and faster timing only for small peripheral accents.
+- Preserve editorial discipline: clear margins, repeated motif, controlled palette, consistent stroke weight, and enough negative space for the face to breathe.
+- In a batch, vary the motion grammar across outputs. Do not make every version a slice screen, circular halo, or diagonal banner.
+- The effect must still pass portrait safety: eyes, mouth, face contour, and key clothing silhouette remain readable; moving layers create atmosphere and parallax, not identity confusion.
 
 ### Step 2.7: Treat ribbons and orbits as one motif
 
@@ -456,7 +458,7 @@ Do not collapse into one default style. Draw from a broad visual vocabulary when
 
 Pick directions that fit the photo and maximize contrast between the two outputs.
 
-When strong local HTML references are available, mine their structural tricks: depth planes, photo-slice movement, oversized type tracks, foreground cutouts, ornamental frames, small metadata systems, and different animation tempos. Do not copy the same surface look unless the user explicitly asks for that style.
+When strong local HTML references are available, mine their structural tricks: depth planes, premium motion grammars, oversized type tracks, foreground cutouts, ornamental frames, small metadata systems, and different animation tempos. Do not copy the same surface look unless the user explicitly asks for that style.
 
 When in doubt, increase directional contrast rather than smoothing both concepts toward the middle.
 

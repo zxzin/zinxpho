@@ -241,6 +241,7 @@ When copy will appear on the canvas, read [references/copy-style-systems.md](./r
 
 Copy authority model:
 - **Locked copy**: if the user gives exact wording, treat it as source-of-truth. You may split lines, repeat fragments, adjust case, or place it typographically, but do not rewrite meaning, replace names, or invent a different slogan without approval.
+- Locked copy must also pass visual QA, not just DOM/text-file QA: every user-supplied headline, secondary line, and badge promised in the output must be readable in the rendered browser frame. If a person cutout, 3D depth plane, motion orbit, phone crop, or social UI safe zone hides it, move the copy into a foreground layer, simplify the hierarchy, or reduce the amount shown.
 - **Guided copy**: if the user gives keywords, theme, tone, or product points, keep those constraints and generate a complete copy system around them.
 - **Agent-led copy**: if the user gives no copy, generate the first copy system from the image's implied aura, mythology, attitude, and use case.
 - **Promo/explain copy**: if the asset is promoting Zinxpho or explaining the effect, one variant may include clear value-prop text, but the display variant should still feel like a real poster, not a tutorial panel.

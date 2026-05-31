@@ -25,6 +25,7 @@ The agent must not:
 - invent a better headline instead of the user's wording
 - hide the user's required text in tiny type
 - turn exact copy into vague decorative fragments
+- let a foreground person, 3D transform, animated ribbon, or crop-safe margin hide required text in the rendered frame
 
 If exact copy is too long or visually weak, keep it but solve with hierarchy: dominant excerpt, secondary line, ticker fragments, or a companion short lockup. Mention the tradeoff in the final response if important.
 
